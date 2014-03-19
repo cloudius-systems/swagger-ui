@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Swagger UI</title>
+  <title>OSv API</title>
   <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'/>
   <link href='css/highlight.default.css' media='screen' rel='stylesheet' type='text/css'/>
   <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
@@ -19,7 +19,7 @@
   <script type="text/javascript">
     $(function () {
       window.swaggerUi = new SwaggerUi({
-      url: "http://petstore.swagger.wordnik.com/api/api-docs",
+      url: "http://"+  window.location.host +"/api/api-docs.json",
       dom_id: "swagger-ui-container",
       supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
       onComplete: function(swaggerApi, swaggerUi){
@@ -53,6 +53,7 @@
 
 <body>
 <div id='header'>
+
   <div class="swagger-ui-wrap">
     <a id="logo" href="http://swagger.wordnik.com">swagger</a>
 
